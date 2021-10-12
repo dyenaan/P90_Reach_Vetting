@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
     collection_name.insert_many([com1,com2,com3])
 
-    collection_name = dbname["Action"]
+    collection_act = dbname["Action"]
     act1 = {
         "Name" : "Fast & Furios",
         "Producers": "Produced by: Justin Lin, Vin Diesel, Justin Lin, Samantha Vincent, Joe Roth, Neal H. Moritz, Clayton Townsend, Jeff Kirschenbaum",
@@ -52,9 +52,9 @@ if __name__ == "__main__":
         "Rating & Info": "'https://www.rottentomatoes.com/m/dope_2015', 'https://www.imdb.com/title/tt3850214/'"
         }
 
-    collection_name.insert_many([act1,act2,act3])
+    collection_act.insert_many([act1,act2,act3])
 
-    collection_name = dbname["Animation"]
+    collection_ani = dbname["Animation"]
     ani1 = {
         "Name" : "Demon Slayer",
         "Producers": "Produced by: Shueisha",
@@ -71,8 +71,10 @@ if __name__ == "__main__":
         "Rating & Info": "'https://www.imdb.com/title/tt0409591/'"
         }
 
-    collection_name.insert_many([ani1,ani2,ani3])
+    collection_ani.insert_many([ani1,ani2,ani3])
 
-    print()
+    print(collection_name)
+    print(collection_act)
+    print(collection_ani)
 
 
